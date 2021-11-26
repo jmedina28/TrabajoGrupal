@@ -1,6 +1,7 @@
-# Alef Game
 
-Perfiles de GitHub de los autores de este proyecto:
+<h1 align="center">Alef Game</h1>
+
+<h3 align="center">Perfiles de GitHub de los autores de este proyecto:</h3>
 
 1. [@jmedina28](https://github.com/jmedina28)
 2. [@estherrodriguezgarcia](https://github.com/ESTHERRODRIGUEZGARCIA)
