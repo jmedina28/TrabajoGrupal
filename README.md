@@ -21,5 +21,5 @@ El diagrama de flujo empleado para resolver el ejercicio es el siguiente:
 El código empleado para resolver el ejercicio es el siguiente:
 
 
-```
+```python
 print('Alef Game')
