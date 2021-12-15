@@ -4,7 +4,7 @@ def escalera(n):
         for k in range(0, n-1-i):
             fila = fila + " "
         for j in range(0, i+1):
-            fila = fila
+            fila = fila + "#"
         print(fila)
-        
+
         
