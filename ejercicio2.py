@@ -20,9 +20,9 @@ def comparalosproblemas(a, b):
 if __name__ == "__main__":
     fptr = open(os.environ["Salida"] + "solucion2.txt", "w")
 
-    a = list(map(int, input().rstrip().split()))
+    a = list(map(int, input("Introduzca las notas de Lucía:\n").rstrip().split()))
 
-    b = list(map(int, input().rstrip().split()))
+    b = list(map(int, input("Introduzca las notas de Carlos:\n").rstrip().split()))
 
     resultado = comparalosproblemas(a, b)
 
