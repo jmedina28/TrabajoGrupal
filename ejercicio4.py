@@ -7,8 +7,8 @@ def escalera(n):
             fila = fila + "# "
         print(fila)
 
-if __name__ == "__main__":
-    n = int(input("Introduzca el tamaño de la escalera: ").strip())
 
-    escalera(n)
+n = int(input("Introduzca el tamaño de la escalera: ").strip())
+
+escalera(n)
         
