@@ -1,4 +1,4 @@
-# Importamos librerías
+# Importamos librerías.
 
 import os
 
