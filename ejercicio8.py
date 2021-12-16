@@ -10,3 +10,11 @@ def contador(a, b, c, d, manzanas, naranjas):
     
     print("Han entrado ", str(num_manzanas_dentro), " manzanas")
     print("Han entrado ", str(num_naranjas_dentro), " naranjas")
+
+primer = input().rstrip().split()
+a = int(primer[0])
+b = int(primer[1])
+c = int(segundo[0])
+d =
+segundo =
+tercero =
