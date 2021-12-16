@@ -1,3 +1,11 @@
+# Al introducir datos: 1ª línea: dos nº separados por espacios (distancia a b)
+# 2ª: dos nº separados por espacios (distancia c d)
+# 3ª: dos nº separados por espacios (distancia e f)
+# 4ª: e nº separados por espacios (distancias a las que cada manzana cae desde el punto c)
+# 5ª: f nº separados por espacios (distancias a las que cada naranja cae desde el punto d)
+# me devuelve: 1er nº: manzanas que caen
+# 2º nº: naranjas que caen
+
 def contador(a, b, c, d, manzanas, naranjas):
     num_manzanas_dentro = 0
     num_naranjas_dentro = 0
