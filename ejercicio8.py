@@ -12,9 +12,18 @@ def contador(a, b, c, d, manzanas, naranjas):
     print("Han entrado ", str(num_naranjas_dentro), " naranjas")
 
 primer = input().rstrip().split()
+segundo = input().rstrip().split()
+tercero = input().rstrip().split()
+
 a = int(primer[0])
 b = int(primer[1])
 c = int(segundo[0])
-d =
-segundo =
-tercero =
+d = int(segundo[1])
+e = int(tercero[0])
+f = int(tercero[1])
+
+manzanas = list(map(int(input().rstrip().split())))
+naranjas = list(map(int(input().rstrip().split())))
+
+contador =(a, b, c, d, naranjas, manzanas)
+
