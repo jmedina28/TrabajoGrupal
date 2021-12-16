@@ -5,6 +5,7 @@
 # 5ª: f nº separados por espacios (distancias a las que cada naranja cae desde el punto d)
 # me devuelve: 1er nº: manzanas que caen
 # 2º nº: naranjas que caen
+import re
 
 def contador(a, b, c, d, manzanas, naranjas):
     num_manzanas_dentro = 0
@@ -30,8 +31,8 @@ d = int(segundo[1])
 e = int(tercero[0])
 f = int(tercero[1])
 
-manzanas = list(map(int(input().rstrip().split())))
-naranjas = list(map(int(input().rstrip().split())))
+manzanas = list(map(int(input("e nº separados por espacios (distancias a las que cada manzana cae desde el punto c)").rstrip().split())))
+naranjas = list(map(int(input("f nº separados por espacios (distancias a las que cada naranja cae desde el punto d)").rstrip().split())))
 
 contador =(a, b, c, d, naranjas, manzanas)
 
