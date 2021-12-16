@@ -19,9 +19,9 @@ def contador(a, b, c, d, manzanas, naranjas):
     print("Han entrado ", str(num_manzanas_dentro), " manzanas")
     print("Han entrado ", str(num_naranjas_dentro), " naranjas")
 
-primer = input().rstrip().split()
-segundo = input().rstrip().split()
-tercero = input().rstrip().split()
+primer = input("Introduzca dos números separados por espacios que serán la amplitud de la casa: ").rstrip().split()
+segundo = input("Introduzca dos números separados por espacios que serán la distancia entre los dos árboles: )").rstrip().split()
+tercero = input("Introduzca dos nº separados por espacios: ").rstrip().split()
 
 a = int(primer[0])
 b = int(primer[1])
