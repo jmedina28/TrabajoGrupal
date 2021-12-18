@@ -4,4 +4,9 @@ class coordenadas:
         self.y = y
     
     def comparacion(self, x, y):
+        if self.x == x and self.y == y:
+            return True
+        else:
+            return False
+
         
