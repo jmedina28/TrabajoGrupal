@@ -10,3 +10,13 @@ def juego_de_piedras(n):
     else:
         ganador = "Ha ganado el jugador 2"
         return ganador
+
+def jugada(n):
+    bienjugado = 0
+    modelo = n % 7
+    if modelo >= 2 and modelo <= 3:
+        bienjugado = 2
+    elif modelo == 4:
+        bienjugado = 3
+    elif modelo >= 5 and modelo <= 6:
+        return bienjugado
