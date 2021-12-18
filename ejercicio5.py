@@ -2,10 +2,11 @@ import os
 
 os.environ["OUTPUT_PATH"] = " "
 
-jugador1 = input("Introduzca el nombre del jugador 1: ")
-jugador2 = input("Introduzca el nombre del jugador 2: ")
+
 def juego_de_piedras(n): #n es el número inicial de piedras
     ganador = " "
+    jugador1 = input("Introduzca el nombre del jugador 1: ")
+    jugador2 = input("Introduzca el nombre del jugador 2: ")
     if jugada(n) != 0:
         ganador = "Ha ganado ", jugador1 #jugador 1 siempre juega primero
     else:
