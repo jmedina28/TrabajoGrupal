@@ -11,6 +11,9 @@
 En este [repositorio](https://github.com/jmedina28/TrabajoGrupal) se van a resolver una serie de ejercicios de forma cooperativa. 
 
 ## 1. Suma simple de una matriz
+
+Dada una matriz de números enteros N, encuentre la suma de sus elementos como un número entero.
+
 El código empleado para resolver el ejercicio 1 es el siguiente:
 
 
@@ -36,6 +39,15 @@ if __name__ == "__main__":
     fptr.close()
   ```
 ## 2. Compara los problemas
+
+Lucía y Carlos crearon cada uno un problema para su posterior calificación. Un revisor califica los dos problemas, otorgando puntos en una escala del 1 al 100 para trescategorías: claridad del problema, originalidad y dificultad.
+La calificación del desafío de Lucía es el desafío a = (a [0], a [1], a [2])y la de Carlos es el desafío b = (b [0], b [1], b [2]) .
+La tarea consiste en encontrar sus puntos de comparación comparando a [0] con b [0] , a [1] con b[1] y a [2] con b [2] .
+ * Si a [i]> b [i] , entonces Lucía recibe 1 punto.
+ * Si a [i] <b [i] , entonces Carlos recibe 1 punto.
+ * Si a [i] = b [i] , ninguna persona recibe un punto.
+Los puntos de comparación son los puntos totales que ganó una persona, determínalos.
+
 El código empleado para resolver el ejercicio 2 es el siguiente:
 ```python
 # Importamos las librerías necesarias para la realización del ejercicio.
@@ -72,6 +84,9 @@ if __name__ == "__main__":
     fptr.close()
 ```
 ## 3. Una suma muy grande
+
+La tarea consiste en calcular e imprimir la suma de los elementos en una matriz, teniendo en cuenta que algunos de esos números enteros pueden ser bastante grandes.
+
 El código empleado para resolver el ejercicio 3 es el siguiente:
 ```python
 # Importamos las librerías.
@@ -106,6 +121,8 @@ if __name__ == "__main__":
     fptr.close()
  ```
 ## 4. La escalera
+Realización un programa que imprima una escalera de tamaño n (base y altura).
+
 El código empleado para resolver el ejercicio 4 es el siguiente:
 ```python
 def escalera(n):
