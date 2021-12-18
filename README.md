@@ -123,6 +123,12 @@ n = int(input("Introduzca el tamaño de la escalera: ").strip())
 escalera(n)
         
   ```
+ Salida: 
+
+<br>
+<img height="300" src="https://github.com/jmedina28/TrabajoGrupal/blob/d0f7c7cce56083c7933ecba37add1881f703c33e/escalera.PNG" />
+<br>
+
 ## Juego de piedras
 El código empleado para resolver el ejercicio 5 es el siguiente:
 ```python
@@ -172,7 +178,13 @@ El código que resuelve dicha tarea es el siguiente:
 print("Rana")
  ```
 ## Estudiantes de calificación
+Representación gráfica de lo que se va a llevar a cabo:
+  
+ <br>
+<img height="300" src="https://github.com/jmedina28/TrabajoGrupal/blob/d0f7c7cce56083c7933ecba37add1881f703c33e/notas.PNG" />
+<br>
 El código empleado para resolver el ejercicio 7 es el siguiente:
+
 ```python
 import os
 
@@ -220,6 +232,12 @@ if __name__ == "__main__":
     fptr.close()
   ```
   ## Manzana y naranja
+  Representación gráfica de lo que se va a llevar a cabo:
+  
+  <br>
+<img height="300" src="https://github.com/jmedina28/TrabajoGrupal/blob/d0f7c7cce56083c7933ecba37add1881f703c33e/manzanaynaranja.PNG" />
+<br>
+  
   El código empleado para resolver el ejercicio 8 es el siguiente:
 ```python
   # Al introducir datos: 1ª línea: dos nº separados por espacios (distancia a b)
