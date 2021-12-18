@@ -12,7 +12,7 @@ En este [repositorio](https://github.com/jmedina28/TrabajoGrupal) se van a resol
 
 ## 1. Suma simple de una matriz
 
-Dada una matriz de números enteros N, este ejrcicio nos devolverá la suma de sus elementos como un número entero.
+Dada una matriz de números enteros N, este ejercicio nos devolverá la suma de sus elementos como un número entero.
 
 El código empleado para resolver el ejercicio 1 es el siguiente:
 
