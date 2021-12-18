@@ -147,6 +147,17 @@ escalera(n)
 <br>
 
 ## 5. Juego de piedras
+
+Dos jugadores están jugando con un número inicial de n piedras. Jugador1 siempre juega primero, y los dos jugadores se mueven en turnos alternos. Las reglas del juego son las
+siguientes:
+En un solo movimiento, un jugador puede eliminar ,2,3 o 5 , o piedras del tablero de juego.
+Si un jugador no puede hacer un movimiento, ese jugador pierde el juego.
+Dado el número inicial de piedras, se devolverá el nombre del ganador.
+Cada jugador juega de manera óptima, lo que significa que no harán un movimiento que les haga perder el juego si existe un movimiento ganador.
+Por ejemplo, si n=4, P1 puede hacer los siguientes movimientos:
+• El primer jugador elimina 2 piedras quedando 2. El segundo jugador luego eliminará 2 piedras y ganar.
+• El primer jugador elimina 3 piedras quedando 1 . El segundo jugador no se puede mover y pierde.
+
 El código empleado para resolver el ejercicio 5 es el siguiente:
 ```python
 import os
