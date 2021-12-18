@@ -1,0 +1,5 @@
+Ha ganado el jugador 1.
+Ha ganado el jugador 2.
+Ha ganado el jugador 1.
+Ha ganado el jugador 1.
+Ha ganado el jugador 1.
