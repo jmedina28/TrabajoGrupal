@@ -28,3 +28,5 @@ def buscaTunel(tuneles, Casillax, Casillay):
             coordenadas.y = i.extremo1.y
             break
     return coordenadas
+
+def movimientos(laberinto, n, m, Casillax, Casillay):
