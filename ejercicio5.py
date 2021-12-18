@@ -10,3 +10,6 @@ def juego_de_piedras(n):
     else:
         ganador = "Ha ganado el jugador 2"
         return ganador
+
+def jugada(n):
+    
