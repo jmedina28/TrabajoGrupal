@@ -48,6 +48,7 @@ La tarea consiste en encontrar sus puntos de comparación comparando a [0] con b
  * Si a [i]> b [i] , entonces Lucía recibe 1 punto.
  * Si a [i] <b [i] , entonces Carlos recibe 1 punto.
  * Si a [i] = b [i] , ninguna persona recibe un punto.
+ * 
 Los puntos de comparación son los puntos totales que ganó una persona; determínalos.
 
 El código empleado para resolver el ejercicio 2 es el siguiente:
