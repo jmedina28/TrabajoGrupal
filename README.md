@@ -10,7 +10,7 @@
 
 En este [repositorio](https://github.com/jmedina28/TrabajoGrupal) se van a resolver una serie de ejercicios de forma cooperativa. 
 
-## Suma simple de una matriz
+## 1. Suma simple de una matriz
 El código empleado para resolver el ejercicio 1 es el siguiente:
 
 
@@ -35,7 +35,7 @@ if __name__ == "__main__":
     fptr.write(str(result) + "\n")
     fptr.close()
   ```
-## Compara los problemas
+## 2. Compara los problemas
 El código empleado para resolver el ejercicio 2 es el siguiente:
 ```python
 # Importamos las librerías necesarias para la realización del ejercicio.
@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
     fptr.close()
 ```
-## Una suma muy grande
+## 3. Una suma muy grande
 El código empleado para resolver el ejercicio 3 es el siguiente:
 ```python
 # Importamos las librerías.
@@ -105,7 +105,7 @@ if __name__ == "__main__":
 
     fptr.close()
  ```
-## La escalera
+## 4. La escalera
 El código empleado para resolver el ejercicio 4 es el siguiente:
 ```python
 def escalera(n):
@@ -129,7 +129,7 @@ escalera(n)
 <img height="300" src="https://github.com/jmedina28/TrabajoGrupal/blob/d0f7c7cce56083c7933ecba37add1881f703c33e/escalera.PNG" />
 <br>
 
-## Juego de piedras
+## 5. Juego de piedras
 El código empleado para resolver el ejercicio 5 es el siguiente:
 ```python
 import os
@@ -171,7 +171,7 @@ fptr.close()
 
 
   ```
-## Rana en laberinto
+## 6. Rana en laberinto
 El objetivo de esta tarea es conseguir devolver al usuario la probabilidad de que la rana Alef escape de un laberinto regido por unas condiciones determinadas. Para hacerlo más visual véase el ejemplo que se muestra a continuación:
 
 <br>
@@ -182,7 +182,7 @@ El código que resuelve dicha tarea es el siguiente:
 ```python
 print("Rana")
  ```
-## Estudiantes de calificación
+## 7. Estudiantes de calificación
 Representación gráfica de lo que se va a llevar a cabo:
   
  <br>
@@ -236,7 +236,7 @@ if __name__ == "__main__":
 
     fptr.close()
   ```
-  ## Manzana y naranja
+  ## 8. Manzana y naranja
   Representación gráfica de lo que se va a llevar a cabo:
   
   <br>
