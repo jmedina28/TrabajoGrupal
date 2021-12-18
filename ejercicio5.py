@@ -24,9 +24,11 @@ def jugada(n):
         return bienjugado
 
 fptr = open(os.environ["OUTPUT_PATH"] + "solución5.txt", "w")
+print("Introduce el número de casos: ")
 t = int(input().strip()) #número de casos
 
 for t in range(t):
+    print("Introduzca ", t, " números enteros (serán las piedras en un caso de prueba)")
     n = int(input().strip())
     final = juego_de_piedras(n)
     fptr.write(final + "\n")
