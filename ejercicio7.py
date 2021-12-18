@@ -26,13 +26,13 @@ def notafinal(notas):
 
 if __name__ == "__main__":
     fptr = open(os.environ["OUTPUT_PATH"] + "solucion7.txt", "w")
-    print("Número de estudiantes")
+    print("Número de estudiantes:")
     nestudiantes = int(input().strip())
 
     notas = []
 
     for _ in range(nestudiantes):
-        print("Nota de cada estudiante")
+        print("Nota de cada estudiante:")
         notas_i = int(input().strip())
         notas.append(notas_i)
 
