@@ -34,3 +34,21 @@ def movimientos(laberinto, n, m, Casillax, Casillay):
     num = 0
     den = 0
     probabilidad = 0.00
+    if Casillax > 0 and laberinto[Casillax - 1][Casillay] != "m":
+        den += 1
+        if laberinto[Casillax - 1][Casillay] == "s":
+            num += 1
+    if Casillax < n - 1 and laberinto[Casillax + 1][Casillay] != "m":
+        den += 1
+        if laberinto[Casillax + 1][Casillay] == "s":
+            num += 1
+    if Casillay < m - 1 and laberinto[Casillax][Casillay + 1] != "m":
+        den += 1
+        if laberinto[Casillax][Casillay + 1] == "s":
+            num += 1
+    if Casillay > 0 and laberinto[Casillax][Casillay - 1] != "m":
+        den += 1
+        if laberinto[Casillax][Casillay - 1] == "s":
+            num += 1
+    if den == 0:
+        return probabilidad
