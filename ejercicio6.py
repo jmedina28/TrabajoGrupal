@@ -30,7 +30,7 @@ def buscaTunel(tuneles, Casillax, Casillay):
     return coordenadas
 
 
-def movimientos(laberinto, n, m, Casillax, Casillay):
+def movimientos(laberinto, tuneles, n, m, Casillax, Casillay):
     num = 0
     den = 0
     probabilidad = 0.00
@@ -52,3 +52,39 @@ def movimientos(laberinto, n, m, Casillax, Casillay):
             num += 1
     if den == 0:
         return probabilidad
+    probabilidad = num / den
+    if Casillax > 0 and laberinto[Casillax - 1][Casillay] == "vt":
+        laberintocopy = laberinto
+        coordenadas = buscaTunel(Casillax - 1, Casillay, tuneles)
+        laberintocopy[Casillax][Casillay] = "m"
+        probabilidad += (
+            movimientos(
+                tuneles, coordenadas.x, coordenadas.y, laberintocopy, n, m, tuneles
+            )
+            / den
+        )
+    if Casillax < n - 1 and laberinto[Casillax + 1][Casillay] == "vt":
+        laberintocopy = laberinto
+        coordenadas = buscaTunel(Casillax + 1, Casillay, tuneles)
+        laberintocopy[Casillax][Casillay] = "m"
+        probabilidad += (
+            movimientos(tuneles, coordenadas.x, coordenadas.y, laberintocopy, n, m)
+            / den
+        )
+    if Casillay < m - 1 and laberinto[Casillax][Casillay + 1] == "vt":
+        laberintocopy = laberinto
+        coordenadas = buscaTunel(Casillax, Casillay + 1, tuneles)
+        laberintocopy[Casillax][Casillay] = "m"
+        probabilidad += (
+            movimientos(tuneles, coordenadas.x, coordenadas.y, laberintocopy, n, m)
+            / den
+        )
+    if Casillay > 0 and laberinto[Casillax][Casillay - 1] == "vt":
+        laberintocopy = laberinto
+        coordenadas = buscaTunel(Casillax, Casillay - 1, tuneles)
+        laberintocopy[Casillax][Casillay] = "m"
+        probabilidad += (
+            movimientos(tuneles, coordenadas.x, coordenadas.y, laberintocopy, n, m)
+            / den
+        )
+    return probabilidad
