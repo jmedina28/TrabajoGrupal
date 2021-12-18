@@ -3,10 +3,10 @@ import os
 os.environ["OUTPUT_PATH"] = " "
 
 
-def juego_de_piedras(n):
+def juego_de_piedras(n): #n es el número inicial de piedras
     ganador = " "
     if jugada(n) != 0:
-        ganador = "Ha ganado el jugador 1"
+        ganador = "Ha ganado el jugador 1" #jugador 1 siempre juega primero
     else:
         ganador = "Ha ganado el jugador 2"
         return ganador
