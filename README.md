@@ -8,15 +8,8 @@
 
 ---
 
-En este repositorio se van a resolver una serie de ejercicios de forma cooperativa. El objetivo de esta tarea es conseguir devolver al usuario la probabilidad de que la rana Alef escape de un laberinto regido por unas condiciones determinadas. Para hacerlo más visual véase el ejemplo que se muestra a continuación:
+En este [repositorio](https://github.com/jmedina28/TrabajoGrupal) se van a resolver una serie de ejercicios de forma cooperativa. 
 
-<br>
-<img height="300" src="https://github.com/jmedina28/AlefGame/blob/7eb789b263c356a8d679521a04959e7237b8237f/ejemplo.png" />
-<br>
-
-El diagrama de flujo empleado para resolver el ejercicio es el siguiente:
-
-(Diagrama de flujo)
 ## Suma simple de una matriz
 El código empleado para resolver el ejercicio 1 es el siguiente:
 
@@ -130,3 +123,158 @@ n = int(input("Introduzca el tamaño de la escalera: ").strip())
 escalera(n)
         
   ```
+## Juego de piedras
+El código empleado para resolver el ejercicio 5 es el siguiente:
+```python
+import os
+
+os.environ["OUTPUT_PATH"] = " "
+
+
+def juego_de_piedras(n):
+    ganador = " "
+    if jugada(n) != 0:
+        ganador = "Ha ganado el jugador 1"
+    else:
+        ganador = "Ha ganado el jugador 2"
+        return ganador
+
+def jugada(n):
+    bienjugado = 0
+    modelo = n % 7
+    if modelo >= 2 and modelo <= 3:
+        bienjugado = 2
+    elif modelo == 4:
+        bienjugado = 3
+    elif modelo >= 5 and modelo <= 6:
+        return bienjugado
+
+fptr = open(os.environ["OUTPUT_PATH"] + "solución5.txt", "w")
+t = int(input().strip()) #número de casos
+
+for t in range(t):
+    n = int(input().strip())
+    final = juego_de_piedras(n)
+    fptr.write(final + "\n")
+
+fptr.close()
+
+  ```
+## Rana en laberinto
+El objetivo de esta tarea es conseguir devolver al usuario la probabilidad de que la rana Alef escape de un laberinto regido por unas condiciones determinadas. Para hacerlo más visual véase el ejemplo que se muestra a continuación:
+
+<br>
+<img height="300" src="https://github.com/jmedina28/AlefGame/blob/7eb789b263c356a8d679521a04959e7237b8237f/ejemplo.png" />
+<br>
+El código que resuelve dicha tarea es el siguiente: 
+
+```python
+print("Rana")
+ ```
+## Estudiantes de calificación
+El código empleado para resolver el ejercicio 7 es el siguiente:
+```python
+import os
+
+os.environ["OUTPUT_PATH"] = "solución7.txt"
+
+
+def notasEstudiantes(notas):
+    lista = []
+    for i in notas:
+        lista.append(notafinal(i))
+    return lista
+
+
+def notafinal(notas):
+    notaredondeada = 0
+    if notas < 40:
+        notas = notaredondeada
+    else:
+        cocientes = int(notas / 5 + 1)
+        multiplo = int(cocientes * 5)
+        if multiplo - notas < 3:
+            multiplo = notaredondeada
+        else:
+            notas = notaredondeada
+    return notaredondeada
+
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"] + "solucion7.txt", "w")
+    print("Número de estudiantes:")
+    nestudiantes = int(input().strip())
+
+    notas = []
+
+    for _ in range(nestudiantes):
+        print("Nota de cada estudiante:")
+        notas_i = int(input().strip())
+        notas.append(notas_i)
+
+    resultado = notasEstudiantes(notas)
+
+    fptr.write("\n".join(map(str, resultado)))
+    fptr.write("\n")
+
+    fptr.close()
+  ```
+  ## Manzana y naranja
+  El código empleado para resolver el ejercicio 8 es el siguiente:
+```python
+  # Al introducir datos: 1ª línea: dos nº separados por espacios (distancia a b)
+# 2ª: dos nº separados por espacios (distancia c d)
+# 3ª: dos nº separados por espacios (distancia e f)
+# 4ª: e nº separados por espacios (distancias a las que cada manzana cae desde el punto c)
+# 5ª: f nº separados por espacios (distancias a las que cada naranja cae desde el punto d)
+# me devuelve: 1er nº: manzanas que caen
+# 2º nº: naranjas que caen
+
+
+def contador(a, b, c, d, manzanas, naranjas):
+    num_manzanas_dentro = 0
+    num_naranjas_dentro = 0
+    for manzana1 in manzanas:
+        if c + manzana1 >= a and c <= b:
+            num_manzanas_dentro += 1
+    for naranja1 in naranjas:
+        if d + naranja1 >= a and d <= b:
+            num_naranjas_dentro += 1
+
+    print("Han entrado ", str(num_manzanas_dentro), " manzanas")
+    print("Han entrado ", str(num_naranjas_dentro), " naranjas")
+
+
+primer = (
+    input(
+        "Introduzca dos números separados por espacios que serán la amplitud de la casa: "
+    )
+    .rstrip()
+    .split()
+)
+segundo = (
+    input(
+        "Introduzca dos números separados por espacios que serán la distancia entre los dos árboles: "
+    )
+    .rstrip()
+    .split()
+)
+tercero = input("Introduzca dos nº separados por espacios: ").rstrip().split()
+
+a = int(primer[0])
+b = int(primer[1])
+c = int(segundo[0])
+d = int(segundo[1])
+e = int(tercero[0])
+f = int(tercero[1])
+
+print(
+    " nº separados por espacios (distancias a las que cada manzana cae desde el punto c)",
+)
+manzanas = list(map(int, input().rstrip().split()))
+print(
+    " nº separados por espacios (distancias a las que cada naranja cae desde el punto d)",
+)
+naranjas = list(map(int, input().rstrip().split()))
+
+contador(a, b, c, d, naranjas, manzanas)
