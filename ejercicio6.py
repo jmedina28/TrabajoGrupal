@@ -29,4 +29,8 @@ def buscaTunel(tuneles, Casillax, Casillay):
             break
     return coordenadas
 
+
 def movimientos(laberinto, n, m, Casillax, Casillay):
+    num = 0
+    den = 0
+    probabilidad = 0.00
