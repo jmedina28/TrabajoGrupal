@@ -10,4 +10,7 @@ class coordenadas:
             return False
 
 class Tunel:
-      
+    def __init__(self, x1, x2, y1, y2):
+        self.extremo1 = coordenadas(x1, y1)
+        self.extremo2 = coordenadas(x2, y2)
+        
