@@ -41,8 +41,10 @@ if __name__ == "__main__":
 ## 2. Compara los problemas
 
 Lucía y Carlos crearon cada uno un problema para su posterior calificación. Un revisor califica los dos problemas, otorgando puntos en una escala del 1 al 100 para tres categorías: claridad del problema, originalidad y dificultad.
-La calificación del desafío de Lucía es el desafío a = (a [0], a [1], a [2])y la de Carlos es el desafío b = (b [0], b [1], b [2]) .
-La tarea consiste en encontrar sus puntos de comparación comparando a [0] con b [0] , a [1] con b[1] y a [2] con b [2] .
+
+La calificación del desafío de Lucía es el desafío a = (a [0], a [1], a [2])y la de Carlos es el desafío b = (b [0], b [1], b [2]).
+
+La tarea consiste en encontrar sus puntos de comparación comparando a [0] con b [0] , a [1] con b[1] y a [2] con b [2].
  * Si a [i]> b [i] , entonces Lucía recibe 1 punto.
  * Si a [i] <b [i] , entonces Carlos recibe 1 punto.
  * Si a [i] = b [i] , ninguna persona recibe un punto.
