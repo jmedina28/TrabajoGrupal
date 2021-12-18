@@ -20,3 +20,5 @@ def jugada(n):
         bienjugado = 3
     elif modelo >= 5 and modelo <= 6:
         return bienjugado
+
+fptr = open(os.environ["OUTPUT_PATH"] + "solución5.txt", "w")
