@@ -28,4 +28,6 @@ for t in range(t):
     n = int(input().strip())
     final = juego_de_piedras(n)
     fptr.write(final + "\n")
-    
+
+fptr.close()
+
