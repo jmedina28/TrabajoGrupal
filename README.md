@@ -235,7 +235,7 @@ if __name__ == "__main__":
   Representación gráfica de lo que se va a llevar a cabo:
   
   <br>
-<img height="300" src="https://github.com/jmedina28/TrabajoGrupal/blob/d0f7c7cce56083c7933ecba37add1881f703c33e/manzanaynaranja.PNG" />
+<img height="250" src="https://github.com/jmedina28/TrabajoGrupal/blob/d0f7c7cce56083c7933ecba37add1881f703c33e/manzanaynaranja.PNG" />
 <br>
   
   El código empleado para resolver el ejercicio 8 es el siguiente:
