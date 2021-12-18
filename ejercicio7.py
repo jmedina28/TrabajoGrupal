@@ -1,6 +1,6 @@
 import os
 
-os.environ["OUTPUT_PATH"] = "solución7.txt"
+os.environ["OUTPUT_PATH"] = ""
 
 
 def notasEstudiantes(notas):
@@ -13,14 +13,14 @@ def notasEstudiantes(notas):
 def notafinal(notas):
     notaredondeada = 0
     if notas < 40:
-        notas = notaredondeada
+        notaredondeada = notas
     else:
         cocientes = int(notas / 5 + 1)
         multiplo = int(cocientes * 5)
         if multiplo - notas < 3:
-            multiplo = notaredondeada
+            notaredondeada = multiplo
         else:
-            notas = notaredondeada
+            notaredondeada = notas
     return notaredondeada
 
 
