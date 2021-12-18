@@ -5,14 +5,8 @@ os.environ["OUTPUT_PATH"] = "solución7.txt"
 
 def notasEstudiantes(notas):
     lista = []
-    for (
-        i
-    ) in (
-        notas
-    ):  # notas va a ser la lista sobre la que van a quedan registradas todas las notas
-        lista.append(
-            notafinal(i)
-        )  # notafinal va a ser la función que hace los redondeos
+    for i in notas:
+        lista.append(notafinal(i))
     return lista
 
 
@@ -28,3 +22,23 @@ def notafinal(notas):
         else:
             notas = notaredondeada
     return notaredondeada
+
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"] + "solucion7.txt", "w")
+    print("Número de estudiantes")
+    nestudiantes = int(input().strip())
+
+    notas = []
+
+    for _ in range(nestudiantes):
+        print("Nota de cada estudiante")
+        notas_i = int(input().strip())
+        notas.append(notas_i)
+
+    resultado = notasEstudiantes(notas)
+
+    fptr.write("\n".join(map(str, resultado)))
+    fptr.write("\n")
+
+    fptr.close()
