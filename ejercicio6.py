@@ -53,7 +53,7 @@ def movimientos(laberinto, tuneles, n, m, Casillax, Casillay):
     if den == 0:
         return probabilidad
     probabilidad = num / den
-    if Casillax > 0 and laberinto[Casillax - 1][Casillay] == "vt":
+    if Casillax > 0 and laberinto[Casillax - 1][Casillay] == "v":
         laberintocopy = laberinto
         coordenadas = buscaTunel(Casillax - 1, Casillay, tuneles)
         laberintocopy[Casillax][Casillay] = "m"
@@ -63,7 +63,7 @@ def movimientos(laberinto, tuneles, n, m, Casillax, Casillay):
             )
             / den
         )
-    if Casillax < n - 1 and laberinto[Casillax + 1][Casillay] == "vt":
+    if Casillax < n - 1 and laberinto[Casillax + 1][Casillay] == "v":
         laberintocopy = laberinto
         coordenadas = buscaTunel(Casillax + 1, Casillay, tuneles)
         laberintocopy[Casillax][Casillay] = "m"
@@ -71,7 +71,7 @@ def movimientos(laberinto, tuneles, n, m, Casillax, Casillay):
             movimientos(tuneles, coordenadas.x, coordenadas.y, laberintocopy, n, m)
             / den
         )
-    if Casillay < m - 1 and laberinto[Casillax][Casillay + 1] == "vt":
+    if Casillay < m - 1 and laberinto[Casillax][Casillay + 1] == "v":
         laberintocopy = laberinto
         coordenadas = buscaTunel(Casillax, Casillay + 1, tuneles)
         laberintocopy[Casillax][Casillay] = "m"
@@ -79,7 +79,7 @@ def movimientos(laberinto, tuneles, n, m, Casillax, Casillay):
             movimientos(tuneles, coordenadas.x, coordenadas.y, laberintocopy, n, m)
             / den
         )
-    if Casillay > 0 and laberinto[Casillax][Casillay - 1] == "vt":
+    if Casillay > 0 and laberinto[Casillax][Casillay - 1] == "v":
         laberintocopy = laberinto
         coordenadas = buscaTunel(Casillax, Casillay - 1, tuneles)
         laberintocopy[Casillax][Casillay] = "m"
@@ -88,3 +88,40 @@ def movimientos(laberinto, tuneles, n, m, Casillax, Casillay):
             / den
         )
     return probabilidad
+
+
+print("Dimensiones del laberinto y número de túneles:(filas columnas tuneles)")
+primerainput = input().rstrip().split()
+
+n = int(primerainput[0])
+
+m = int(primerainput[1])
+
+k = int(primerainput[2])
+laberinto = []
+for ni in range(n):
+    print(
+        "Fila " + str(ni) + " del laberinto:(m muro,s salida, b bomba, v vacía o túnel)"
+    )
+    fila = input()
+    laberinto.append(list(fila))
+tuneles = []
+for n in range(k):
+    print("Coordenadas(i1 j1 i2 j2) del túnel: " + str(n))
+    segundainput = input().rstrip().split()
+
+    x1 = int(segundainput[0])
+
+    y1 = int(segundainput[1])
+
+    x2 = int(segundainput[2])
+
+    y2 = int(segundainput[3])
+    tuneles.append(Tunel(x1, y1, x2, y2))
+
+print("Coordenadas iniciales de la rana: ")
+tercerainput = input().rstrip().split()
+pos1 = int(tercerainput[0])
+pos2 = int(tercerainput[1])
+probabilidad = movimientos(pos1, pos2, tuneles, laberinto, n, m)
+print(probabilidad)
