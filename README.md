@@ -10,7 +10,19 @@
 
 En este [repositorio](https://github.com/jmedina28/TrabajoGrupal) se van a resolver una serie de ejercicios de forma cooperativa. 
 
-## 1. Suma simple de una matriz
+***
+## Índice
+1. [Suma simple de una matriz](#id1)
+3. [Compara los problemas](#id2)
+3. [Una suma muy grande](#id3)
+4. [La escalera](#id4)
+5. [Juego de piedras](#id5)
+6. [Rana en laberinto](#id6)
+7. [Estudiantes de calificación](#id7)
+8. [Manzana y naranja](#id8)
+***
+
+## 1. Suma simple de una matriz<a name="id1"></a>
 
 Dada una matriz de números enteros N, este ejercicio nos devolverá la suma de sus elementos como un número entero.
 
@@ -38,7 +50,7 @@ if __name__ == "__main__":
     fptr.write(str(result) + "\n")
     fptr.close()
   ```
-## 2. Compara los problemas
+## 2. Compara los problemas<a name="id2"></a>
 
 Lucía y Carlos crearon cada uno un problema para su posterior calificación. Un revisor califica los dos problemas, otorgando puntos en una escala del 1 al 100 para tres categorías: claridad del problema, originalidad y dificultad.
 
@@ -86,7 +98,7 @@ if __name__ == "__main__":
 
     fptr.close()
 ```
-## 3. Una suma muy grande
+## 3. Una suma muy grande<a name="id3"></a>
 
 La tarea consiste en calcular e imprimir la suma de los elementos en una matriz, teniendo en cuenta que algunos de esos números enteros pueden ser bastante grandes.
 
@@ -123,7 +135,7 @@ if __name__ == "__main__":
 
     fptr.close()
  ```
-## 4. La escalera
+## 4. La escalera<a name="id4"></a>
 Realización un programa que imprima una escalera de tamaño n (base y altura).
 
 El código empleado para resolver el ejercicio 4 es el siguiente:
@@ -149,7 +161,7 @@ escalera(n)
 <img height="300" src="https://github.com/jmedina28/TrabajoGrupal/blob/d0f7c7cce56083c7933ecba37add1881f703c33e/escalera.PNG" />
 <br>
 
-## 5. Juego de piedras
+## 5. Juego de piedras<a name="id5"></a>
 
 Dos jugadores están jugando con un número inicial de n piedras. Jugador1 siempre juega primero, y los dos jugadores se mueven en turnos alternos. Las reglas del juego son las
 siguientes:
@@ -213,7 +225,7 @@ if __name__ == "__main__":
 
 
   ```
-## 6. Rana en laberinto
+## 6. Rana en laberinto<a name="id6"></a>
 El objetivo de esta tarea es conseguir devolver al usuario la probabilidad de que la rana Alef escape de un laberinto regido por unas condiciones determinadas. Para hacerlo más visual véase el ejemplo que se muestra a continuación:
 
 <br>
@@ -350,7 +362,7 @@ pos2 = int(tercerainput[1])
 probabilidad = movimientos(pos1, pos2, tuneles, laberinto, n, m)
 print(probabilidad)
  ```
-## 7. Estudiantes de calificación
+## 7. Estudiantes de calificación<a name="id7"></a>
 
 La Universidad para el nuevo curso va a implementar una nueva poítica de calificación:
 
@@ -420,7 +432,7 @@ if __name__ == "__main__":
 
     fptr.close()
   ```
-  ## 8. Manzana y naranja
+  ## 8. Manzana y naranja<a name="id8"></a>
   La casa de Sam tiene un manzano y un naranjo que dan frutos. En este ejercicio obtendremos la cantidad de manzanas y naranjas que caerán en la casa de Sam según los valores introducidos.
 
   Representación gráfica de lo que se va a llevar a cabo:
